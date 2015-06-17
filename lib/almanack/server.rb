@@ -14,6 +14,7 @@ module Almanack
     set :root, -> { Almanack.config.theme_root }
     set :protection, except: :frame_options
     set :feed_path, "feed"
+    set :bind, '0.0.0.0'
 
     use Rack::JSONP
 
